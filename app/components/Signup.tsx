@@ -1,23 +1,25 @@
 "use client"
+
 import { useState } from "react"
 
-export default function Signin(){
+export default function Signup(){
 
     const [data,setData]=useState({
-            username:"",
-            password:"",
-        })
-    
-        function handleChange(e){
-            setData((prev)=>({...prev,[e.target.name]:e.target.value}))
-        }
+        username:"",
+        email:"",
+        password:"",
+    })
+
+    function handleChange(e){
+        setData((prev)=>({...prev,[e.target.name]:e.target.value}))
+    }
 
     return(
         <div className="flex justify-center items-center h-screen gap-2.5 ">
             {/* left component */}
             <div  className="flex justify-center w-1/2 p-20 ">
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 ">
 
                 <div className="flex flex-col items-center">
                     <h1 className="text-5xl font-bold">Create an account</h1>
@@ -25,13 +27,17 @@ export default function Signin(){
                 </div>
                 
                 <div className="flex flex-col gap-2">
-                    <div>
+                    <div className="w-full">
                         <h1 className="font-bold">Username</h1>
                         <input className="border p-1.5 rounded-lg w-full" type="text" placeholder="Enter Your Username" name="username" onChange={handleChange}/>
                     </div>
                     <div>
+                        <h1 className="font-bold">Email</h1>
+                        <input className="border p-1.5 rounded-lg w-full" type="text" placeholder="name@example.com" name="email" onChange={handleChange}/>
+                    </div>
+                    <div>
                         <h1 className="font-bold">Password</h1>
-                        <input className="border p-1.5 rounded-lg w-full" type="password" placeholder="Enter Your Password" name="password" onChange={handleChange}/>
+                        <input className="border p-1.5 rounded-lg w-full" type="text" placeholder="Enter Your Password" name="password" onChange={handleChange}/>
                     </div>
                     <button className="bg-black text-white w-full p-2 rounded-lg">Signin</button>
                     
