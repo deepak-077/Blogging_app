@@ -12,6 +12,11 @@ export default function Signin(){
             setData((prev)=>({...prev,[e.target.name]:e.target.value}))
         }
 
+        function handleSubmit(){
+            console.log(data.username);
+            console.log(data.password);
+        }
+
     return(
         <div className="flex justify-center items-center h-screen gap-2.5 ">
             {/* left component */}
@@ -20,8 +25,8 @@ export default function Signin(){
             <div className="flex flex-col gap-2">
 
                 <div className="flex flex-col items-center">
-                    <h1 className="text-5xl font-bold">Create an account</h1>
-                    <h2 className=" ">Already have an account? <span className="underline">Login</span></h2>
+                    <h1 className="text-5xl font-bold">Sign in </h1>
+                    <h2 className=" ">Don't have an account? <span className="underline">Signup</span></h2>
                 </div>
                 
                 <div className="flex flex-col gap-2">
@@ -33,7 +38,7 @@ export default function Signin(){
                         <h1 className="font-bold">Password</h1>
                         <input className="border p-1.5 rounded-lg w-full" type="password" placeholder="Enter Your Password" name="password" onChange={handleChange}/>
                     </div>
-                    <button className="bg-black text-white w-full p-2 rounded-lg">Signin</button>
+                    <button className="bg-black text-white w-full p-2 rounded-lg" onClick={handleSubmit}>Signin</button>
                     
                 </div>
 
