@@ -2,13 +2,13 @@ export default function Blog(){
     const date=new Date().toDateString();
     console.log(date);
     return (
-        <div className="flex w-full p-10">
+        <div className="flex w-full p-10 gap-5">
 
 
             {/* left component - blog */}
             <div className="flex flex-col gap-4 w-3/4">
                 <h1 className="text-5xl font-extrabold">Taxing Laughter: The Joke Tax Chronicles</h1>
-                <h3>Posted On {date}</h3>
+                <h3 className="font-semibold underline">Posted On {date}</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia harum eligendi molestias, doloremque alias quos beatae nulla officia assumenda iure iusto optio? Officia optio expedita possimus, sunt ea repellat perspiciatis quis, ad cum tempore, rem provident accusantium aperiam reprehenderit voluptate. 
                     Fuga, incidunt optio! Facere magnam eveniet impedit autem sequi corrupti minima exercitationem debitis quas nam? Minus saepe amet nobis ducimus sint a, molestiae error facere beatae at alias nam officia ratione magnam nulla laboriosam eligendi aliquam cumque quis dolorem dicta reprehenderit fugiat labore! Fuga dolor fugit possimus dolorum deleniti eius ad debitis. 
                     In dolores suscipit reprehenderit odit debitis molestias similique, placeat hic. Asperiores nesciunt corrupti incidunt! Corrupti maiores doloribus qui cumque facilis hic, natus quaerat odio at nulla ipsum? Praesentium illum minima ratione. Saepe ipsa labore molestias expedita commodi exercitationem perspiciatis omnis architecto incidunt. Nobis corrupti eaque nemo quaerat suscipit id placeat aspernatur, mollitia repellat ea expedita, unde velit dolore? 
@@ -24,7 +24,7 @@ export default function Blog(){
             </div>
 
             {/* right component - username and about */}
-            <div className="flex flex-col gap-4 w-1/4">
+            <div className="flex flex-col gap-4 w-1/4 bg-amber-300 p-5">
             <h3 className="font-bold text-3xl">Author</h3>
             <div className="flex gap-3 items-center">
                 <img className="size-10 rounded-full" src="chris.jpg" alt="" />
