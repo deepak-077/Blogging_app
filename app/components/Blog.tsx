@@ -24,10 +24,10 @@ export default function Blog(){
             </div>
 
             {/* right component - username and about */}
-            <div className="flex flex-col gap-4 w-1/4 bg-amber-300 p-5">
+            <div className="flex flex-col gap-4 w-1/4 bg-amber-300 p-5 rounded-lg">
             <h3 className="font-bold text-3xl">Author</h3>
-            <div className="flex gap-3 items-center">
-                <img className="size-10 rounded-full" src="chris.jpg" alt="" />
+            <div className="flex gap-3 items-center cursor-pointer">
+                <img className="size-10 rounded-full " src="chris.jpg" alt="" />
                 <h1 className="font-bold text-4xl">Jokester</h1>
             </div>
             <p>Master of mirth, purveyor of puns and the funniest person in the kingdom</p>
