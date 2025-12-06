@@ -3,6 +3,7 @@ import Signin from "./components/Signin";
 import Signup from "./components/Signup";
 import Blog from "./components/Blog";
 import Landing from "./components/Landing";
+import NewBlog from "./components/NewBlog";
 
 export default function Home() {
   return (
@@ -10,10 +11,8 @@ export default function Home() {
       {/* <Signin/>
       <Signup/> */}
       {/* <Blog/> */}
-      <Landing/>
-
-
-      
+      {/* <Landing/> */}
+      <NewBlog/>
     </div>
   );
 }
