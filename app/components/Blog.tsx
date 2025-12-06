@@ -4,7 +4,6 @@ export default function Blog(){
     return (
         <div className="flex w-full p-10 gap-5">
 
-
             {/* left component - blog */}
             <div className="flex flex-col gap-4 w-3/4">
                 <h1 className="text-5xl font-extrabold">Taxing Laughter: The Joke Tax Chronicles</h1>

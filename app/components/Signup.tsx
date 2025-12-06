@@ -42,9 +42,7 @@ export default function Signup(){
                     <button className="bg-black text-white w-full p-2 rounded-lg">Signin</button>
                     
                 </div>
-
-            </div>
-                
+            </div>  
             </div>
 
             {/* right component */}
@@ -55,18 +53,9 @@ export default function Signup(){
                 <div>
                     <h3 className="text-xl">Julles Winfield</h3>
                     <h4 className="text-lg font-normal">CEO, Acme Inc</h4>
-
                 </div>
-                
-            
-
             </div>
-                
             </div>
-
-
         </div>
     )
-    
-
 }
